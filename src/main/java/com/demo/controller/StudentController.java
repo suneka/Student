@@ -42,6 +42,10 @@ public List<StudentEntity>ageException(@PathVariable int a) throws AgeNotFound{
 public List<StudentEntity>idException(@PathVariable int i) throws IdNotFound{
 	return ss.IdException(i);
 }
+@GetMapping("/print")
+public String print() {
+	return "Print Value";
+}
 }
 
 
